@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ajeesh Gireeshkumar Girija — Finance & Risk</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Outfit:wght@300;400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --bg:#0b0f1a;
+  --surface:#111827;
+  --accent:#ef4444;
+  --accent2:#b91c1c;
+  --text:#e8eaf0;
+  --muted:#6b7a99;
+  --line:rgba(255,255,255,0.07);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Outfit',sans-serif;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  display:flex;
+  justify-content:space-between;
+  padding:1rem 3rem;
+  background:rgba(0,0,0,0.7);
+}
+.nav-links{display:flex;gap:1.5rem;list-style:none;}
+.nav-links a{color:var(--muted);text-decoration:none;}
+.nav-links a:hover{color:var(--accent);}
+
+/* HERO */
+section{padding:6rem 3rem;}
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+.hero-name{
+  font-size:4rem;
+  font-family:'Cormorant Garamond',serif;
+}
+.hero-name em{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* TAGS */
+.tag{
+  border:1px solid var(--accent);
+  padding:4px 10px;
+  font-size:12px;
+  color:var(--accent);
+}
+
+/* BLOOMBERG TERMINAL */
+.terminal{
+  background:#05070d;
+  border:1px solid var(--accent);
+  margin-top:3rem;
+  padding:2rem;
+  font-family:'Space Mono',monospace;
+  font-size:0.8rem;
+  box-shadow:0 0 40px rgba(239,68,68,0.15);
+}
+
+.terminal-header{
+  color:var(--accent);
+  margin-bottom:1rem;
+  letter-spacing:0.1em;
+}
+
+.terminal-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem;
+}
+
+.terminal-box{
+  border:1px solid rgba(239,68,68,0.2);
+  padding:1rem;
+}
+
+.terminal-box span{
+  color:var(--muted);
+  display:block;
+}
+
+.terminal-box strong{
+  color:var(--text);
+  font-size:1rem;
+}
+
+/* CONTACT */
+.contact-card{
+  border:1px solid var(--line);
+  padding:1rem 2rem;
+  display:flex;
+  gap:1rem;
+  text-decoration:none;
+  color:white;
+}
+.contact-card:hover{
+  border-color:var(--accent);
+  background:rgba(239,68,68,0.1);
+}
+
+/* FOOTER */
+footer{
+  padding:1rem 3rem;
+  border-top:1px solid var(--line);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div>AG Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#terminal">Markets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1 class="hero-name">
+      Ajeesh <em>Gireeshkumar Girija</em>
+    </h1>
+
+    <p>Finance & Risk Management · FRM Candidate</p>
+
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+      <span class="tag">Risk</span>
+      <span class="tag">DeFi</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Python</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    MSc student specializing in financial risk and decentralized finance systems.
+    Focused on bridging traditional finance frameworks with emerging crypto risk models.
+  </p>
+</section>
+
+<!-- BLOOMBERG TERMINAL SECTION -->
+<section id="terminal">
+  <h2>Market Snapshot</h2>
+
+  <div class="terminal">
+    <div class="terminal-header">AGRM &lt;GO&gt; — RISK DASHBOARD</div>
+
+    <div class="terminal-grid">
+      <div class="terminal-box">
+        <span>Focus Area</span>
+        <strong>DeFi Risk</strong>
+      </div>
+
+      <div class="terminal-box">
+        <span>Certification</span>
+        <strong>FRM® Part I</strong>
+      </div>
+
+      <div class="terminal-box">
+        <span>Tools</span>
+        <strong>SQL · Python · SAP</strong>
+      </div>
+
+      <div class="terminal-box">
+        <span>Availability</span>
+        <strong>6M+ Internship</strong>
+      </div>
+
+      <div class="terminal-box">
+        <span>Location</span>
+        <strong>France · EU</strong>
+      </div>
+
+      <div class="terminal-box">
+        <span>Status</span>
+        <strong style="color:#ef4444;">OPEN</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:20px;">
+
+    <a href="mailto:ajkarma9@gmail.com" class="contact-card">
+      ✉️ Email
+    </a>
+
+    <a href="tel:+33759807521" class="contact-card">
+      📞 +33 7 59 80 75 21
+    </a>
+
+    <a href="https://linkedin.com" class="contact-card">
+      💼 LinkedIn
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Ajeesh Gireeshkumar Girija
+</footer>
+
+</body>
+</html>
